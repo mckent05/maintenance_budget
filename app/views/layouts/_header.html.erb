@@ -1,0 +1,28 @@
+<%if user_signed_in? %>
+  <nav class ='nav d-flex a-center'>
+  <%= link_to root_path do %>
+    <div class='img-header d-flex a-center'>
+     <%= image_tag("recipe.png", width:'50px', height:'50px') %>
+    <h1 class='nav-header'>My Recipe App</h1>
+    </div>
+  <%end%>
+  
+  
+   <div class='link-cont d-flex a-center'>
+     <div class='nav-links d-flex a-center'>
+       <h3><%= "Logged in: #{current_user.name} " %> </h3>
+       <%= link_to "View Foods", foods_path %>
+       <%= link_to "Add new Recipe", new_recipy_path %>
+       <%= link_to "View All Recipes", recipies_path %>
+       <%= link_to "View Public Recipe", public_recipies_path %>
+       <%= button_to "Logout", destroy_user_session_path, :method => :delete %>
+     </div>
+     
+   </div>
+  
+  </nav>
+  <%else%>
+    <nav class ='nav d-flex a-center'>
+       <h1 class='class-header'>My Recipe App</h1>
+    </nav>
+<%end%>
