@@ -1,0 +1,20 @@
+<h1>page to add new equipment</h1>
+
+
+
+<div class='new-equipment'> 
+    <%=form_with url: equipments_path, scope: :data do |f| %>
+      <div class="field d-flex a-center j-center f-col" >
+        <%= f.label :icon, 'Select Icon' %>
+         <%= f.select :icon, @icons.collect { |icon| [icon['name'], icon['image']] }, class: "full-width", :prompt => 'Select an Icon', :required=>true %>
+      </div>
+      <div class="field d-flex a-center j-center f-col">
+        <%= f.label :name, 'Name'  %>
+        <%= f.text_field :name, :required=>true %>
+      </div>
+    <div class="actions d-flex a-center f-col">
+         <%= f.submit "Add Equipment"%>
+    </div>
+      
+<% end %>
+</div>

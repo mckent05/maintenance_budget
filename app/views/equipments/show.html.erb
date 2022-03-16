@@ -1,0 +1,23 @@
+<h1>page to show repairs for a given equipment</h1>
+<%if @equipmentrepairs.empty?%>
+  <div class='equipments-show-page d-flex a-center j-center'>
+    <h1>No repair for this equipment. Please add a repair <%= link_to "here", new_repair_path%></h2>
+  </div>
+<%else%>
+    <div class='repair-cont'>
+    <%= render partial: "layouts/flash" %>
+    <div class='new-repair'>
+        <%= link_to "Add new Repair", new_repair_path %>
+    </div>
+    <%@equipmentrepairs.each do |eq|%>
+        <div class='repair'>
+            <h1><%= "Your #{eq.repair.name } repair on #{eq.equipment.name} costs: "%></h1>
+            <h2><%= "$#{eq.repair.amount}" %></h2>
+            <p><%= eq.repair.created_at.strftime('%d %b %Y at %I %M %p') %></p>
+            <%if can? :destroy, eq.repair %>
+              <%= button_to "Delete", repair_path(eq.repair.id), :method => :delete %>
+            <%end%>
+        </div>
+    <%end%>
+   </div>
+<%end%>
