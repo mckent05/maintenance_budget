@@ -1,3 +1,5 @@
+![budget1](https://user-images.githubusercontent.com/73607512/158787227-84b20607-a2bd-4d9c-a58d-31bd07d3c066.PNG)![budget2](https://user-images.githubusercontent.com/73607512/158787368-9cc5ac43-c020-4ed3-8a80-63e0f922f565.PNG)
+
 # Maintenance Budget App
 
 The maintenance budget app help you keep track of your equipments maintenance and their cost. This app allows your add a new equipment you want to amintenace and also let's you add repairs and its costs for each equipment. 
