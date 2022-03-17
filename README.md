@@ -7,6 +7,10 @@ The maintenance budget app help you keep track of your equipments maintenance an
 ## Live Link
 
 [Link](https://polar-lake-28978.herokuapp.com/equipments/1)
+
+## Live Video
+
+ [Watch video](https://www.loom.com/share/1577e73e3ffe45ea802659db78ac77d2)
 ## Built With
 - Ruby
 - Rails
