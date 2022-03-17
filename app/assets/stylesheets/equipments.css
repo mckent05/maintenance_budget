@@ -25,6 +25,14 @@
   row-gap: 20px;
 }
 
+.equipments-index-page a {
+  text-decoration: underline;
+}
+
+.equipments-show-page a {
+  text-decoration: underline;
+}
+
 .new-equipment a {
   width: 100%;
   background-color: greenyellow;
@@ -74,16 +82,19 @@
   margin: 10vh 0;
 }
 
+.repair button {
+  width: 10vw;
+  background-color: red;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
 .equipment button:hover {
   box-shadow: 0 3px 4px grey;
-}
-
-.equipments-show-page a {
-  text-decoration: underline;
-}
-
-.equipments-index-page a {
-  text-decoration: underline;
 }
 
 .field3 {
@@ -149,17 +160,6 @@ select {
 .cost-date p {
   font-size: 20px;
   font-weight: 600;
-}
-
-.repair button {
-  width: 10vw;
-  background-color: red;
-  text-align: center;
-  padding: 10px;
-  color: #fff;
-  border: none;
-  outline: none;
-  border-radius: 4px;
 }
 
 .repair button:hover {
