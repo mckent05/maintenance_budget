@@ -1,24 +1,79 @@
-# README
+# Maintenance Budget App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The maintenance budget app help you keep track of your equipments maintenance and their cost. This app allows your add a new equipment you want to amintenace and also let's you add repairs and its costs for each equipment. 
+## Built With
+- Ruby
+- Rails
+- Postgresql
 
-Things you may want to cover:
 
-* Ruby version
+## `Getting Started`
 
-* System dependencies
+To get a local copy of this project:
 
-* Configuration
+Clone this repository or download the Zip folder:
+```
+git clone https://github.com/mckent05/maintenance_budget.git
+```
 
-* Database creation
+Change direct to the folder with this command:
+```
+cd maintenance_budget.git
+```
 
-* Database initialization
+To get started, In the root directory run:
+```
+gem install bundler
+```
+Then run:
+```
+rails s
+```
 
-* How to run the test suite
+## After installing bundle
 
-* Services (job queues, cache servers, search engines, etc.)
+Please run the following commands `rails db:create` `rails db:migrate` `rails s`
 
-* Deployment instructions
+## Credits
 
-* ...
+- Credit goes to [Creative Commons Lincense](https://creativecommons.org/licenses/by-nc/4.0/).
+
+-Original design by [Gregoire Vella on Behance.](https://www.behance.net/gregoirevella)
+
+## `Tests`
+To run all test on this repository run the command `bundle exec rspec`
+### To track linter errors locally follow these steps:  
+
+Track linter errors run:
+```
+rubocop
+```
+
+## Authors
+
+👤 Akinlade Temitope
+
+- GitHub: [mckent05](https://github.com/mckent05)
+- LinkedIn: [Akinlade Temitope](https://www.linkedin.com/in/akinladetemitope/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/mckent05/maintenance_budget/issues/new).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- This project is part module 4 in the Microverse study program.
+- Thanks to the Microverse team for the great curriculum.
+- Thanks to Code Reviewers for the insightful feedback.
+- A great thanks to My coding partners, morning session team, and standup team Partners for their contributions.
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
+
