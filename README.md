@@ -1,6 +1,10 @@
 # Maintenance Budget App
 
 The maintenance budget app help you keep track of your equipments maintenance and their cost. This app allows your add a new equipment you want to amintenace and also let's you add repairs and its costs for each equipment. 
+
+## Live Link
+
+[Link](https://polar-lake-28978.herokuapp.com/equipments/1)
 ## Built With
 - Ruby
 - Rails
