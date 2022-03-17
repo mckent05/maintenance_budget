@@ -1,4 +1,6 @@
-<h1 class='repair-header d-flex a-center j-center'>All Equipments</h1>
+<div class='back-arrow-cont d-flex a-cnter j-center'>
+    <h1 class='repair-header d-flex a-center j-center'>All Equipment</h1>
+</div>
 <%if @equipments.empty?%>
   <div class='equipments-index-page d-flex a-center j-center'>
     <h1 class='index-header'>No equipment for this user. Please add an equipment <%= link_to "here", new_equipment_path%></h2>

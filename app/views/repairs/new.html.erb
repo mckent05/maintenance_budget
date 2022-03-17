@@ -1,4 +1,9 @@
-<h1 class='repair-header d-flex a-center j-center'>New Repair</h1>
+<div class='back-arrow-cont d-flex a-cnter j-center'>
+    <h1 class='repair-header d-flex a-center j-center'>New Equipment</h1>
+    <%= link_to root_path do %>
+       <%= image_tag("backarrow.png", width:'50px', height:'50px') %>
+     <%end%>
+</div>
 <div class= 'add-equipment add-repair d-flex f-col a-center j-center'> 
     <%=form_with url: repairs_path, scope: :data do |f| %>
       <div class="field3 d-flex a-center j-center f-col" >

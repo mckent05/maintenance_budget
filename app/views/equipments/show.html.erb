@@ -1,4 +1,9 @@
-<h1 class='repair-header d-flex a-center j-center'>Equipment Repairs</h1>
+<div class='back-arrow-cont d-flex a-cnter j-center'>
+    <h1 class='repair-header d-flex a-center j-center'>Equipment Repairs</h1>
+    <%= link_to root_path do %>
+    <%= image_tag("backarrow.png", width:'50px', height:'50px') %>
+<%end%>
+</div>
 <%if @equipmentrepairs.empty?%>
   <div class='equipments-show-page d-flex a-center j-center'>
     <h1 class='index-header'>No repair for this equipment. Please add a repair <%= link_to "here", new_repair_path%></h2>
