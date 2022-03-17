@@ -1,0 +1,61 @@
+.login-page {
+  width: 25vw;
+  margin: 15px auto;
+  row-gap: 5px;
+}
+
+.login-header {
+  width: 100vw;
+}
+
+.login-page form {
+  row-gap: 5px;
+  width: 100%;
+}
+
+.field {
+  row-gap: 5px;
+  width: 100%;
+  margin: 10px 0;
+  color: black;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.field input {
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 4px 3px grey;
+  border: none;
+  outline: none;
+  width: 80%;
+}
+
+.field2 {
+  width: 100%;
+  margin: 20px 0;
+  justify-content: space-around;
+}
+
+.actions input {
+  width: 13vw;
+  background-color: blue;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px grey;
+  border: none;
+  outline: none;
+  padding: 10px;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .login-page {
+    width: 50vw;
+  }
+
+  .actions input {
+    width: 50vw;
+  }
+}

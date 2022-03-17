@@ -1,0 +1,19 @@
+.add-repair {
+  margin-top: 10px;
+}
+
+.back-arrow-cont {
+  width: 90vw;
+  column-gap: 20px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px grey;
+}
+
+.repair-header {
+  width: 80vw;
+  text-align: center;
+  order: 2;
+}

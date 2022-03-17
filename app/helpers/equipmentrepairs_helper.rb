@@ -1,0 +1,2 @@
+module EquipmentrepairsHelper
+end

@@ -1,0 +1,37 @@
+<div class='back-arrow-cont d-flex a-cnter j-center'>
+    <h1 class='repair-header d-flex a-center j-center'>All Equipment</h1>
+</div>
+<%if @equipments.empty?%>
+  <div class='equipments-index-page d-flex a-center j-center'>
+    <h1 class='index-header'>No equipment for this user. Please add an equipment <%= link_to "here", new_equipment_path%></h2>
+  </div>
+<%else%>
+    <div class='equipments-container d-flex f-col a-center j-center'>
+    <%= render partial: "layouts/flash" %>
+    <div class='new-equipment d-flex a-center'>
+        <%= link_to "Add new Equipment", new_equipment_path %>
+    </div>
+    <div class='new-equipment-container d-flex f-col a-center j-center'>
+        <%@equipments.each do |equipment|%>
+        <%total = 0%>
+        <%equipment.equipmentrepairs.each { |equip_rep| total += equip_rep.repair.amount } %>
+      <%= link_to equipment_path(equipment.id) do %>
+         <div class='equipment d-flex a-center'>
+            <%= image_tag("#{equipment.icon}", width:'150px', height:'150px') %>
+            <div class='name-date d-flex f-col a-center'>
+                <p><%= equipment.name%></p>
+                <p><%= equipment.created_at.strftime('%d %b %Y at %I %M %p') %></p>
+            </div>
+            <h3 class='price'><%= "$#{total}"%></h3>
+            <%if can? :destroy, equipment %>
+              <%= button_to "Delete", equipment_path(equipment.id), :method => :delete %>
+            <%end%>
+         </div>
+       <%end%>
+    <%end%>
+    </div> 
+</div>
+<%end%>
+
+
+

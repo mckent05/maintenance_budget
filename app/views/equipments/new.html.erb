@@ -1,0 +1,22 @@
+<div class='back-arrow-cont d-flex a-cnter j-center'>
+    <h1 class='repair-header d-flex a-center j-center'>New Equipment</h1>
+    <%= link_to root_path do %>
+    <%= image_tag("backarrow.png", width:'50px', height:'50px') %>
+<%end%>
+</div>
+<div class='add-equipment d-flex f-col a-center j-center'> 
+    <%=form_with url: equipments_path, scope: :data do |f| %>
+      <div class="field3 d-flex a-center j-center f-col" >
+        <%= f.label :icon, 'Select Icon' %>
+         <%= f.select :icon, @icons.collect { |icon| [icon['name'], icon['image']] }, class: "full-width", :prompt => 'Select an Icon', :required=>true %>
+      </div>
+      <div class="field3 d-flex a-center j-center f-col">
+        <%= f.label :name, 'Name'  %>
+        <%= f.text_field :name, :required=>true %>
+      </div>
+    <div class="action1 d-flex a-center f-col">
+         <%= f.submit "Add Equipment"%>
+    </div>
+      
+<% end %>
+</div>

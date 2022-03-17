@@ -1,0 +1,199 @@
+.equipments-index-page {
+  width: 100%;
+  height: 60vh;
+}
+
+.equipments-container {
+  width: 80%;
+  margin: 0 auto;
+  row-gap: 20px;
+}
+
+.index-header {
+  width: 100vw;
+  text-align: center;
+}
+
+.new-equipment {
+  width: 100%;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  order: 2;
+}
+
+.new-equipment-container {
+  row-gap: 20px;
+}
+
+.equipments-index-page a {
+  text-decoration: underline;
+}
+
+.equipments-show-page a {
+  text-decoration: underline;
+}
+
+.new-equipment a {
+  width: 100%;
+  background-color: greenyellow;
+  border-radius: 4px;
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  font-size: 23px;
+}
+
+.new-equipment a:hover {
+  box-shadow: 0 2px 4px grey;
+}
+
+.equipment {
+  width: 80vw;
+  justify-content: space-evenly;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 2px grey;
+}
+
+.name-date {
+  justify-content: space-between;
+  width: 50%;
+  height: 15vh;
+}
+
+.name-date p {
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.equipment button {
+  width: 10vw;
+  background-color: red;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+.add-equipment {
+  margin: 10vh 0;
+}
+
+.repair button {
+  width: 10vw;
+  background-color: red;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+.equipment button:hover {
+  box-shadow: 0 3px 4px grey;
+}
+
+.field3 {
+  width: 80vw;
+  row-gap: 7px;
+  margin: 20px 0;
+}
+
+.field3 input,
+select {
+  width: 50%;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.action1 {
+  width: 80vw;
+}
+
+.action1 input {
+  padding: 20px;
+  background-color: greenyellow;
+  color: #fff;
+  width: 80%;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  border-radius: 4px;
+}
+
+.repair-cont {
+  row-gap: 30px;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.new-repair {
+  order: 3;
+}
+
+.equip-repair-cont {
+  width: 80vw;
+  row-gap: 20px;
+}
+
+.repair {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.action1 input:hover {
+  box-shadow: 0 1px 8px grey;
+}
+
+.cost-date {
+  height: 15vh;
+  width: 70%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.cost-date p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.repair button:hover {
+  box-shadow: 0 1px 8px grey;
+}
+
+@media screen and (max-width: 768px) {
+  .equipment {
+    flex-direction: column;
+  }
+
+  .name-date {
+    flex-direction: row;
+  }
+
+  .equipment button {
+    width: 50vw;
+  }
+
+  .repair {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .cost-date {
+    width: 100%;
+    align-items: center;
+  }
+
+  .repair button {
+    width: 50vw;
+  }
+
+  .price {
+    margin: 20px 0;
+  }
+}
