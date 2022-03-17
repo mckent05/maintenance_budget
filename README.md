@@ -42,7 +42,7 @@ Please run the following commands `rails db:create` `rails db:migrate` `rails s`
 
 - Credit goes to [Creative Commons Lincense](https://creativecommons.org/licenses/by-nc/4.0/).
 
--Original design by [Gregoire Vella on Behance.](https://www.behance.net/gregoirevella)
+- Original design by [Gregoire Vella on Behance.](https://www.behance.net/gregoirevella)
 
 ## `Tests`
 To run all test on this repository run the command `bundle exec rspec`
