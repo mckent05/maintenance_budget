@@ -1,20 +1,19 @@
-<h1> page to add new repairs</h1>
-
-<div class='new-equipment'> 
+<h1 class='repair-header d-flex a-center j-center'>New Repair</h1>
+<div class= 'add-equipment add-repair d-flex f-col a-center j-center'> 
     <%=form_with url: repairs_path, scope: :data do |f| %>
-      <div class="field d-flex a-center j-center f-col" >
+      <div class="field3 d-flex a-center j-center f-col" >
         <%= f.label :equipment_id, 'Select Equipment' %>
          <%= f.select :equipment_id, @equipments.collect { |equipment| [equipment.name, equipment.id] }, class: "full-width", :prompt => 'Select an Equipment', :required=>true %>
       </div>
-      <div class="field d-flex a-center j-center f-col">
+      <div class="field3 d-flex a-center j-center f-col">
         <%= f.label :name, 'Name'  %>
         <%= f.text_field :name, :required=>true %>
       </div>
-       <div class="field d-flex a-center j-center f-col">
+       <div class="field3 d-flex a-center j-center f-col">
         <%= f.label :amount, 'Amount'  %>
         <%= f.number_field :amount, :required=>true %>
       </div>
-    <div class="actions d-flex a-center f-col">
+    <div class="action1 d-flex a-center f-col">
          <%= f.submit "Add Repair"%>
     </div>
       

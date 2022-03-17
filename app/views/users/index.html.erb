@@ -1,6 +1,7 @@
-<div class='user-container'>
-    <div class='user'>
-        <h1><%= "Number of Equipments: #{current_user.equipments.length}"%></h1>
-        <h2><%="All repairs carried out: #{current_user.repairs.length}"%></h2>
-    </div>
+<div class = "landing-page">
+  <%= image_tag("backg.jpg") %>
+  <div class="login-control d-flex f-col a-center j-center">
+  <%= link_to "LOG IN", new_user_session_path%>
+  <%= link_to "SIGN UP", new_user_registration_path%>
+  </div>
 </div>

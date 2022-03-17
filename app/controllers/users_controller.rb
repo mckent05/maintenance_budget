@@ -1,7 +1,4 @@
-# frozen_string_literal: true
-
 class UsersController < ApplicationController
-    def index
-        
-    end
+  before_action :authenticate_user!, except: :index
+  def index; end
 end
