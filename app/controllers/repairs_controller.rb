@@ -1,9 +1,9 @@
 class RepairsController < ApplicationController
   before_action :authenticate_user!
   def create
-    repair = current_user.repairs.new(name: repair_params[:name], amount: repair_params[:amount])
-    equipment = Equipment.find(repair_params[:equipment_id])
-    Equipmentrepair.create(equipment:, repair:)
+    new_repair = current_user.repairs.new(name: repair_params[:name], amount: repair_params[:amount])
+    new_equipment = Equipment.find(repair_params[:equipment_id])
+    Equipmentrepair.create(equipment: new_equipment, repair: new_repair)
     respond_to do |format|
       format.html do
         if repair.save
